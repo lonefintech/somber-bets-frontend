@@ -1,7 +1,13 @@
 const Tabulator = require('tabulator-tables');
-var fs = require('fs')
-var odds = fs.readFileSync(__dirname + '/odds.html', 'utf8');
 
+file_url = './odds.html'
+fetch(file_url).then(response => response.text())
+.then( data => {
+    var odds = data
+    var oddshtml = parseHTML(odds)
+    document.getElementById('odds-div').append(oddshtml)
+    var table = new Tabulator(".dataframe", {});
+})
 
 function parseHTML(html) {
     var t = document.createElement('template');
@@ -9,6 +15,3 @@ function parseHTML(html) {
     return t.content.cloneNode(true);
 }
 
-var oddshtml = parseHTML(odds)
-document.getElementById('odds-div').append(oddshtml)
-var table = new Tabulator(".dataframe", {});

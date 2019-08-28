@@ -1,0 +1,892 @@
+<link href="https://unpkg.com/tabulator-tables@4.4.1/dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.4.1/dist/js/tabulator.min.js"></script>
+
+
+<div id="example-table"></div>
+<table id='my-table' border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Timestamp</th>
+      <th>Time</th>
+      <th>Meet</th>
+      <th>Race Number</th>
+      <th>Bookie</th>
+      <th>Horse</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Movement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.566968e+09</td>
+      <td>15:00:57</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>4.90</td>
+      <td>7.80</td>
+      <td>7.587650</td>
+    </tr>
+    <tr>
+      <th>1.566968e+09</th>
+      <td>15:01:31</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Meteorise</td>
+      <td>5.20</td>
+      <td>7.80</td>
+      <td>6.410256</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:09:39</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>7.80</td>
+      <td>4.30</td>
+      <td>-10.435301</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:09:39</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Rexford</td>
+      <td>13.50</td>
+      <td>7.20</td>
+      <td>-6.481481</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:09:39</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Del Sur</td>
+      <td>13.50</td>
+      <td>8.20</td>
+      <td>-4.787715</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:09:39</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Vital Image</td>
+      <td>5.30</td>
+      <td>4.20</td>
+      <td>-4.941599</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:15:08</td>
+      <td>SUNSHINE COAST</td>
+      <td>01</td>
+      <td>AmtBF_B3</td>
+      <td>My Fair Balentine</td>
+      <td>503.80</td>
+      <td>18.23</td>
+      <td>-5.286972</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:17:10</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>4.30</td>
+      <td>5.40</td>
+      <td>4.737295</td>
+    </tr>
+    <tr>
+      <th>1.566969e+09</th>
+      <td>15:17:10</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Meteorise</td>
+      <td>7.40</td>
+      <td>5.40</td>
+      <td>-5.005005</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:19:03</td>
+      <td>SUNSHINE COAST</td>
+      <td>01</td>
+      <td>AmtBF_B3</td>
+      <td>My Fair Balentine</td>
+      <td>18.23</td>
+      <td>500.00</td>
+      <td>5.285464</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:21:33</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.80</td>
+      <td>1.60</td>
+      <td>-6.944444</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:21:33</td>
+      <td>SUNSHINE COAST</td>
+      <td>01</td>
+      <td>AmtBF_B3</td>
+      <td>My Fair Balentine</td>
+      <td>500.00</td>
+      <td>18.23</td>
+      <td>-5.285464</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:21:33</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Son Of The Sun</td>
+      <td>6.00</td>
+      <td>8.60</td>
+      <td>5.038760</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:21:33</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Del Sur</td>
+      <td>12.00</td>
+      <td>7.80</td>
+      <td>-4.487179</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:22:34</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>5.40</td>
+      <td>7.00</td>
+      <td>4.232804</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:22:34</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>My Fair Balentine</td>
+      <td>1.90</td>
+      <td>1.67</td>
+      <td>-7.248661</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:22:34</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Son Of The Sun</td>
+      <td>8.60</td>
+      <td>6.00</td>
+      <td>-5.038760</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:22:34</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Del Sur</td>
+      <td>7.80</td>
+      <td>22.00</td>
+      <td>8.275058</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:22:34</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Meteorise</td>
+      <td>30.00</td>
+      <td>8.80</td>
+      <td>-8.030303</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:22:34</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>My Fair Balentine</td>
+      <td>1.91</td>
+      <td>1.70</td>
+      <td>-6.467508</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:23:03</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Del Sur</td>
+      <td>22.00</td>
+      <td>8.00</td>
+      <td>-7.954545</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:23:03</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Rexford</td>
+      <td>19.00</td>
+      <td>7.80</td>
+      <td>-7.557355</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:23:59</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>God's Land</td>
+      <td>14.00</td>
+      <td>7.40</td>
+      <td>-6.370656</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:24:25</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>God's Land</td>
+      <td>7.40</td>
+      <td>14.00</td>
+      <td>6.370656</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:24:25</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Rexford</td>
+      <td>7.80</td>
+      <td>28.00</td>
+      <td>9.249084</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:25:22</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Rexford</td>
+      <td>8.00</td>
+      <td>19.00</td>
+      <td>7.236842</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:25:22</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Meteorise</td>
+      <td>5.40</td>
+      <td>7.80</td>
+      <td>5.698006</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:25:22</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Del Sur</td>
+      <td>8.20</td>
+      <td>22.00</td>
+      <td>7.649667</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:25:22</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Meteorise</td>
+      <td>7.40</td>
+      <td>32.00</td>
+      <td>10.388514</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:25:22</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>Vital Image</td>
+      <td>3.95</td>
+      <td>4.70</td>
+      <td>4.039860</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:26:53</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>My Fair Balentine</td>
+      <td>1.74</td>
+      <td>1.88</td>
+      <td>4.279775</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:26:53</td>
+      <td>SUNSHINE COAST</td>
+      <td>02</td>
+      <td>OddsBF_B2</td>
+      <td>My Fair Balentine</td>
+      <td>1.75</td>
+      <td>1.89</td>
+      <td>4.232804</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:27:23</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.60</td>
+      <td>1.80</td>
+      <td>6.944444</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:27:23</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.90</td>
+      <td>2.10</td>
+      <td>5.012531</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:27:23</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>My Fair Balentine</td>
+      <td>1.30</td>
+      <td>1.10</td>
+      <td>-13.986014</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:30:07</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>God's Land</td>
+      <td>3.60</td>
+      <td>3.10</td>
+      <td>-4.480287</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:30:07</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>9.20</td>
+      <td>22.00</td>
+      <td>6.324111</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:31:12</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>22.00</td>
+      <td>8.60</td>
+      <td>-7.082452</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:33:34</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Del Sur</td>
+      <td>8.40</td>
+      <td>25.00</td>
+      <td>7.904762</td>
+    </tr>
+    <tr>
+      <th>1.566970e+09</th>
+      <td>15:33:34</td>
+      <td>SANDOWN LAKESIDE</td>
+      <td>08</td>
+      <td>OddsBF_B3</td>
+      <td>Meteorise</td>
+      <td>8.60</td>
+      <td>15.50</td>
+      <td>5.176294</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:35:40</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.80</td>
+      <td>1.50</td>
+      <td>-11.111111</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:35:40</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Rexford</td>
+      <td>1.80</td>
+      <td>2.20</td>
+      <td>10.101010</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:35:40</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>2.10</td>
+      <td>2.30</td>
+      <td>4.140787</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:35:40</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>My Fair Balentine</td>
+      <td>1.10</td>
+      <td>1.00</td>
+      <td>-9.090909</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:37:37</td>
+      <td>BELMONT</td>
+      <td>05</td>
+      <td>OddsQ</td>
+      <td>My Fair Balentine</td>
+      <td>2.30</td>
+      <td>2.10</td>
+      <td>-4.140787</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:37:37</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>2.30</td>
+      <td>2.00</td>
+      <td>-6.521739</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:40:06</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.50</td>
+      <td>1.60</td>
+      <td>4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:41:33</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.60</td>
+      <td>1.50</td>
+      <td>-4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:42:27</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.90</td>
+      <td>1.70</td>
+      <td>-6.191950</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:43:22</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.50</td>
+      <td>1.70</td>
+      <td>7.843137</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:43:22</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.70</td>
+      <td>1.30</td>
+      <td>-18.099548</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:44:15</td>
+      <td>BELMONT</td>
+      <td>05</td>
+      <td>OddsQ</td>
+      <td>My Fair Balentine</td>
+      <td>2.20</td>
+      <td>2.00</td>
+      <td>-4.545455</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:45:38</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Meteorise</td>
+      <td>6.10</td>
+      <td>4.90</td>
+      <td>-4.014721</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:46:05</td>
+      <td>BELMONT</td>
+      <td>05</td>
+      <td>OddsQ</td>
+      <td>Ebony's Way</td>
+      <td>7.40</td>
+      <td>5.00</td>
+      <td>-6.486486</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:46:32</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.70</td>
+      <td>1.90</td>
+      <td>6.191950</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:46:32</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>God's Land</td>
+      <td>3.50</td>
+      <td>4.20</td>
+      <td>4.761905</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:46:32</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Rexford</td>
+      <td>2.90</td>
+      <td>3.50</td>
+      <td>5.911330</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:46:32</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.30</td>
+      <td>1.50</td>
+      <td>10.256410</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:46:32</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Vital Image</td>
+      <td>3.40</td>
+      <td>1.60</td>
+      <td>-33.088235</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:47:26</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Del Sur</td>
+      <td>8.10</td>
+      <td>5.40</td>
+      <td>-6.172840</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:47:53</td>
+      <td>BELMONT</td>
+      <td>05</td>
+      <td>OddsQ</td>
+      <td>My Fair Balentine</td>
+      <td>2.10</td>
+      <td>1.70</td>
+      <td>-11.204482</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:47:53</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.90</td>
+      <td>1.60</td>
+      <td>-9.868421</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:47:53</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.50</td>
+      <td>1.60</td>
+      <td>4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:48:22</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.60</td>
+      <td>1.50</td>
+      <td>-4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:48:22</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Rexford</td>
+      <td>3.80</td>
+      <td>4.50</td>
+      <td>4.093567</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:48:22</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Vital Image</td>
+      <td>1.70</td>
+      <td>1.50</td>
+      <td>-7.843137</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:49:10</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.60</td>
+      <td>1.50</td>
+      <td>-4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:49:10</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>My Fair Balentine</td>
+      <td>1.00</td>
+      <td>1.10</td>
+      <td>9.090909</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:49:10</td>
+      <td>SUNSHINE COAST</td>
+      <td>01</td>
+      <td>AmtBF_B3</td>
+      <td>God's Land</td>
+      <td>94.00</td>
+      <td>18.45</td>
+      <td>-4.356224</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:49:38</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Vital Image</td>
+      <td>1.50</td>
+      <td>1.60</td>
+      <td>4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:50:03</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.50</td>
+      <td>1.40</td>
+      <td>-4.761905</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:50:03</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Vital Image</td>
+      <td>1.60</td>
+      <td>1.50</td>
+      <td>-4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:50:26</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Ebony's Way</td>
+      <td>1.50</td>
+      <td>1.60</td>
+      <td>4.166667</td>
+    </tr>
+    <tr>
+      <th>1.566971e+09</th>
+      <td>15:50:26</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Vital Image</td>
+      <td>1.50</td>
+      <td>1.40</td>
+      <td>-4.761905</td>
+    </tr>
+    <tr>
+      <th>1.566972e+09</th>
+      <td>15:51:42</td>
+      <td>BELMONT</td>
+      <td>05</td>
+      <td>OddsQ</td>
+      <td>My Fair Balentine</td>
+      <td>1.90</td>
+      <td>1.60</td>
+      <td>-9.868421</td>
+    </tr>
+    <tr>
+      <th>1.566972e+09</th>
+      <td>15:51:42</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Son Of The Sun</td>
+      <td>1.40</td>
+      <td>1.30</td>
+      <td>-5.494505</td>
+    </tr>
+    <tr>
+      <th>1.566972e+09</th>
+      <td>15:51:42</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>Vital Image</td>
+      <td>1.40</td>
+      <td>1.50</td>
+      <td>4.761905</td>
+    </tr>
+    <tr>
+      <th>1.566972e+09</th>
+      <td>15:51:42</td>
+      <td>BELMONT</td>
+      <td>06</td>
+      <td>OddsQ_P</td>
+      <td>My Fair Balentine</td>
+      <td>1.10</td>
+      <td>1.00</td>
+      <td>-9.090909</td>
+    </tr>
+    <tr>
+      <th>1.566972e+09</th>
+      <td>15:53:46</td>
+      <td>SUNSHINE COAST</td>
+      <td>01</td>
+      <td>AmtBF_B3</td>
+      <td>Meteorise</td>
+      <td>22.47</td>
+      <td>227.90</td>
+      <td>4.011589</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -4,12 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify -t brfs table.js > main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "choices.js": "^8.0.0",
     "tabulator-tables": "^4.4.1"
   },
   "devDependencies": {

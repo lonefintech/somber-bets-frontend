@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -t brfs table.js > main.js"
+    "build": "browserify -t brfs runner-manager.js > main.js"
   },
   "author": "",
   "license": "ISC",
